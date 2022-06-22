@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+        </button>
+        <div class="menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+
+    <!-- Задание. Найдите элемент с классом .dropdown-menu и удалите этот класс, используя свойство classList
+    у элемента, и метод remove(). -->
+
+    <script>
+        'use strict'
+
+        let removeEl = document.querySelector('.dropdown-menu');
+        removeEl.classList.remove('dropdown-menu');
+        // !!!В функции querySelector() для поиска класса обязательно используется точка.Это единственная функция требующая точку для поиска или будут в будущем еще ? Понимаю, что вопрос странный, просто тяжело разобраться с семантикой)
+    </script>
+</body>
+
+</html>
